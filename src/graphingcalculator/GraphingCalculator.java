@@ -15,7 +15,7 @@ public class GraphingCalculator {
      */
     public static void main(String[] args) {
         
-        public static void main(String[] args) {
+
         GraphingCalculator gc = new GraphingCalculator();
         
         double[] arraycoefs=Polynomial.returnPolynomialCoefs();
