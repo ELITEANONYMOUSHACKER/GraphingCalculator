@@ -14,6 +14,12 @@ public class GraphingCalculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        public static void main(String[] args) {
+        GraphingCalculator gc = new GraphingCalculator();
+        
+        double[] arraycoefs=Polynomial.returnPolynomialCoefs();
+        
+        Polynomial p1 = new Polynomial(-5,5,arraycoefs);
     }
 }
