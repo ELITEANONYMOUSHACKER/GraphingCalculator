@@ -18,8 +18,6 @@ public class GraphingCalculator {
 
         GraphingCalculator gc = new GraphingCalculator();
         
-        double[] arraycoefs=Polynomial.returnPolynomialCoefs();
         
-        Polynomial p1 = new Polynomial(-5,5,arraycoefs);
     }
 }
