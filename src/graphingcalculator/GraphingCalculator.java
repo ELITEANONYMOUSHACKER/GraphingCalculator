@@ -18,6 +18,7 @@ public class GraphingCalculator {
 
         GraphingCalculator gc = new GraphingCalculator();
         
-        
+        double a = Math.log(-1);
+        System.out.println(a);
     }
 }
