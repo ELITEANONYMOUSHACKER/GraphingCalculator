@@ -17,5 +17,12 @@ public class GraphingCalculator{
     public static void main(String[] args) {
         GraphingCalculator gc = new GraphingCalculator();
         
+        double[] arraycoefs=Polynomial.returnPolynomialCoefs();
+        
+        Polynomial p1 = new Polynomial(-15,5,arraycoefs);
+        p1.getTOV();
+        p1.printTOV();
+        
+        p1.initializeWindow();
     }
 }
