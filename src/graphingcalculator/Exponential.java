@@ -22,7 +22,6 @@ public class Exponential extends Function{
        stretch = st;
        shift = sh;
        base = b;
-
     }
     
     public double[][] getTOV(){

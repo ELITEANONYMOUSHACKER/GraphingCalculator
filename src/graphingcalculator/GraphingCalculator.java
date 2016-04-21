@@ -4,21 +4,27 @@
  */
 package graphingcalculator;
 
+import java.awt.Graphics;
+import javax.swing.JFrame;
+
+
 /**
  *
- * @author PIKES7641
+ * @author nelss8521
  */
-public class GraphingCalculator {
-
-    /**
-     * @param args the command line arguments
-     */
+public class GraphingCalculator{
+            
     public static void main(String[] args) {
-        
-
         GraphingCalculator gc = new GraphingCalculator();
         
-        double a = Math.log(-1);
-        System.out.println(a);
+        double[] arraycoefs=Polynomial.returnPolynomialCoefs();
+        
+        Polynomial p1 = new Polynomial(-15,5,arraycoefs);
+        p1.getTOV();
+        p1.printTOV();
+        
+        p1.initializeWindow();
+        
+        
     }
 }
