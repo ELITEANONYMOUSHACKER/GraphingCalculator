@@ -78,6 +78,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Exponential"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ExponentialButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="RationalButton">
       <Properties>
@@ -88,16 +91,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Logarithmic"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LogarithmicButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="SineButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Sine"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SineButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="CosineButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cosine"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CosineButtonActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

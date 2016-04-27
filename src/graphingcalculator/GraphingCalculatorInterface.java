@@ -43,14 +43,34 @@ public class GraphingCalculatorInterface extends javax.swing.JFrame {
         });
 
         ExponentialButton.setText("Exponential");
+        ExponentialButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExponentialButtonActionPerformed(evt);
+            }
+        });
 
         RationalButton.setText("Rational");
 
         LogarithmicButton.setText("Logarithmic");
+        LogarithmicButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogarithmicButtonActionPerformed(evt);
+            }
+        });
 
         SineButton.setText("Sine");
+        SineButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SineButtonActionPerformed(evt);
+            }
+        });
 
         CosineButton.setText("Cosine");
+        CosineButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CosineButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -96,6 +116,26 @@ public class GraphingCalculatorInterface extends javax.swing.JFrame {
         PolynomialInterface PolynomialPanel = new PolynomialInterface();
         PolynomialPanel.setVisible(true);
     }//GEN-LAST:event_PolynomialButtonActionPerformed
+
+    private void ExponentialButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExponentialButtonActionPerformed
+        ExponentialInterface ExponentialPanel = new ExponentialInterface();
+        ExponentialPanel.setVisible(true);
+    }//GEN-LAST:event_ExponentialButtonActionPerformed
+
+    private void SineButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SineButtonActionPerformed
+        SineInterface SinePanel = new SineInterface();
+        SinePanel.setVisible(true);
+    }//GEN-LAST:event_SineButtonActionPerformed
+
+    private void CosineButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CosineButtonActionPerformed
+        CosineInterface CosinePanel = new CosineInterface();
+        CosinePanel.setVisible(true);
+    }//GEN-LAST:event_CosineButtonActionPerformed
+
+    private void LogarithmicButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogarithmicButtonActionPerformed
+        LogarithmicInterface LogarithmicPanel = new LogarithmicInterface();
+        LogarithmicPanel.setVisible(true);
+    }//GEN-LAST:event_LogarithmicButtonActionPerformed
 
     /**
      * @param args the command line arguments
