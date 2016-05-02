@@ -50,6 +50,11 @@ public class GraphingCalculatorInterface extends javax.swing.JFrame {
         });
 
         RationalButton.setText("Rational");
+        RationalButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RationalButtonActionPerformed(evt);
+            }
+        });
 
         LogarithmicButton.setText("Logarithmic");
         LogarithmicButton.addActionListener(new java.awt.event.ActionListener() {
@@ -136,6 +141,11 @@ public class GraphingCalculatorInterface extends javax.swing.JFrame {
         LogarithmicInterface LogarithmicPanel = new LogarithmicInterface();
         LogarithmicPanel.setVisible(true);
     }//GEN-LAST:event_LogarithmicButtonActionPerformed
+
+    private void RationalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RationalButtonActionPerformed
+        RationalInterface RationalPanel = new RationalInterface();
+        RationalPanel.setVisible(true);
+    }//GEN-LAST:event_RationalButtonActionPerformed
 
     /**
      * @param args the command line arguments
