@@ -24,17 +24,14 @@ public class Exponential extends Function{
        base = b;
     }
     
-    public double[][] getTOV(){
+    public void getTOV(){
         
-        double[][] TOV = new double[800][2];
         
         for (int i=0; i<800; i++) {
             //get each value for TOV (x,y)
             TOV[i][0] = minX+(deltaX*i);
             TOV[i][1] = Math.pow(base, minX+(deltaX*i))*stretch+shift;
         }
-        
-        return TOV;
         
     }
     

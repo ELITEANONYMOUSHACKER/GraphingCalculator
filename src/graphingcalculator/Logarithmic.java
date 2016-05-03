@@ -25,18 +25,19 @@ public class Logarithmic extends Function{
 
     }
     
-    public double[][] getTOV(){
-        
-        double[][] TOV = new double[800][2];
+    public void getTOV(){
         
         for (int i=0; i<800; i++) {
             //get each value for TOV (x,y)
             TOV[i][0] = minX+(deltaX*i);
-            TOV[i][1] = Math.log(minX+(deltaX*i))/Math.log(base);
-        }
-        
-        return TOV;
-        
+            TOV[i][1] = (Math.log(minX+(deltaX*i))/Math.log(base))*stretch+shift;
+            
+            //Checks if a value is not a number
+            if (Double.isNaN(TOV[i][1])) {
+                TOV[i][0] = 0;
+                TOV[i][1] = 0;
+            }
+        }      
     }
     
 }

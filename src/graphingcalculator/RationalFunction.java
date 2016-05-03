@@ -1,19 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package graphingcalculator;
 
-import java.util.Arrays;
 
-
+// EXTENDS THE FUNCTION CLASS WHICH IS WHERE IT GETS IT'S MINIMUM AND MAXIMUM X-VALUE 
 public class RationalFunction extends Function {
     double coefTwo[];
     double coef[];
     
-    
-    
+    //THE COEFFICIENTS OF THE TOP POLYNOMIAL AND THE BOTTOM POLYNOMIAL ARE NEEDED TO CALCULATE THE POINTS FOR THE RATIONAL FUNCTION 
     public RationalFunction(double minx, double maxx, double [] co, double []coTwo){
        super(minx,maxx);
        coef = co;
@@ -21,16 +15,20 @@ public class RationalFunction extends Function {
        
     }
     
-     
+    // RETURNS THE TABLE OF VALUES  
     public void getTOV(){
-        int counter=0;
         
-        for (double i=minX;i<=maxX;i+=0.5){
+        int counter=0;
+        // LOOP FINDS THE Y-VALUE OF THE POLYNOMIAL IN THE NUMERATOR AND DENOMINATOR 
+        
+        for (double i=minX;i<=maxX;i+=deltaX){
            
+            //KEEPS TRACK OF THE Y-VALUE TOTAL
             double sum=0;
             double sumTwo=0;
-            double sumFinal;
+            double sumFinal = 0;
             
+            // FINDS THE Y-VALUE OF NUMERATOR 
             for (int j=0;j<coef.length;j++){
                 if (coef.length==1){
                     sum=sum+i;
@@ -44,6 +42,7 @@ public class RationalFunction extends Function {
                 
             }
             
+            //FINDS Y-VALUE OF DENOMINATOR 
             for (int k=0;k<coefTwo.length;k++){
                 if (coefTwo.length==1){
                     sumTwo=sumTwo+i;
@@ -56,25 +55,30 @@ public class RationalFunction extends Function {
                 }
                 
             }
-            System.out.println(sum + " " + sumTwo + "ji");
-            if (sumTwo==0){
+            
+            // CANNOT DIVIDE BY ZERO 
+            if (sumTwo!=0){
                 sumFinal = sum/sumTwo;
             }
             
             else{
-                sumFinal = sum/sumTwo;
+                sumFinal = sum/(sumTwo+0.01);
             }
             
           
-            
+            //  UPDATES THE ARRAY TO THE NEW LOCATION 
             TOV[counter][0]=i;
             TOV[counter][1]=sumFinal;
+            
+            //  CATCH INFINITE VALUES
+            if (Double.isInfinite(sumFinal)) {
+                TOV[counter][0]=0;
+                TOV[counter][1]=0;
+            }
+            
             counter++;
             
         }
-    }
-    public void printTOV(){
-        System.out.println(Arrays.deepToString(TOV));
     }
     
 }

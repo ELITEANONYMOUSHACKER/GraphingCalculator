@@ -120,25 +120,25 @@ public class Function extends JFrame{
                 x2=x1;
                 y2=y1;
             }
-            System.out.println(x1);
-            System.out.println(y1);
-            System.out.println(x2);
-            System.out.println(y2);
+            //System.out.println(x1);
+            //System.out.println(y1);
+            //System.out.println(x2);
+            //System.out.println(y2);
             
             g.drawLine(x1,y1,x2,y2);
         }
         
-        System.out.println(TOV[0][0]);
-        System.out.println(TOV[0][1]);
-        System.out.println(TOV[1][0]);
-        System.out.println(TOV[1][1]);
-        System.out.println(TOV[799][0]);
-        System.out.println(TOV[799][1]);
-        System.out.println(deltaX);
-        System.out.println(deltaY);
-        System.out.println(minY);
-        System.out.println(maxY);
-        System.out.println(yHorzLine);
+        //System.out.println(TOV[0][0]);
+        //System.out.println(TOV[0][1]);
+        //System.out.println(TOV[1][0]);
+        //System.out.println(TOV[1][1]);
+        //System.out.println(TOV[799][0]);
+        //System.out.println(TOV[799][1]);
+        //System.out.println(deltaX);
+        //System.out.println(deltaY);
+        //System.out.println(minY);
+        //System.out.println(maxY);
+        //System.out.println(yHorzLine);
         
         for (int i=0;i<5;i++){
             

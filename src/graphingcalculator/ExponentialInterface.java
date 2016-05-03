@@ -113,12 +113,15 @@ public class ExponentialInterface extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterActionPerformed
+        
+        // pulls the text values from the text boxes and creates a exponential function object and makes the graph
         double b = Double.parseDouble(base.getText());
         double sh = Double.parseDouble(shift.getText());
         double st = Double.parseDouble(stretch.getText());
         double miX = Double.parseDouble(minX.getText());
         double maX = Double.parseDouble(maxX.getText());
         Exponential e = new Exponential(miX, maX, st, sh, b);
+        e.getTOV();
         e.initializeWindow();
     }//GEN-LAST:event_enterActionPerformed
 

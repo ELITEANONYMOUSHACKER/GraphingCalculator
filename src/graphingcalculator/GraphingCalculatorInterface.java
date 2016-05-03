@@ -117,6 +117,8 @@ public class GraphingCalculatorInterface extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    // maps different buttons to alternate jframe windows corresponding to their appropriate function
+    
     private void PolynomialButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PolynomialButtonActionPerformed
         PolynomialInterface PolynomialPanel = new PolynomialInterface();
         PolynomialPanel.setVisible(true);
